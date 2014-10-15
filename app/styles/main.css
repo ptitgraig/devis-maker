@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'open_sans_condensedbold';
+    src: url('../fonts/OpenSans-CondBold-webfont.eot');
+    src: url('../fonts/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-CondBold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-CondBold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('../fonts/OpenSans-CondLight-webfont.eot');
+    src: url('../fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-CondLight-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-CondLight-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-CondLight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK56jerHLVJWaC-9Ja-RK4Ug.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK15yncb4dNsWakqlcGW6YXk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+	font-family:"open_sanscondensed_light";
+	font-size: 25px;
+	color:#323232;
+}
+
+h1, h2, h3 {
+	font-family: "open_sans_condensedbold";
+}
+
+.container {
+	width: 1024px;
+	margin:10px auto;
+	box-shadow: 0px 3px 3px #ccc;
+	padding: 20px;
+}
+
+.col-sm-12 {
+	width:100%;
+}
+.col-sm-8 {
+	width:66.6666666666%;
+	float: left;
+}
+.col-sm-6 {
+	width: 50%;
+	float: left;
+}
+.col-sm-4 {
+	width:33.3333333333%;
+	float: left;
+}
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+.from-to {
+	border-top:2px solid #ccc;
+	padding:.25em;
+	color:#777;
+	font-family: "open_sans_condensedbold"
+}
+
+.companies {
+	color:#999;
+	border-top:2px dashed #ccc;
+}
+
+.companies .col-sm-6 {
+	padding:.75em 0;
+}
+
+.companies img {
+	margin-left:.75em;
+}
+
+.client-company {
+	border-left:2px dashed #ccc;
+	width:49%;
+}
+
+.devis-date {
+	font-size: 1.15em;
+	color:#777;
+	text-align: right;
+	padding-top:.75em;
+	letter-spacing: 2px;
+}
+
+.devis-title {
+	border-top:2px solid #ccc;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+th {
+	background: #f1f1f1;
+	border-bottom:3px solid #d8d8d8;
+	padding:.15em 0;
+	letter-spacing: 1px
+}
+th span, td span {
+	display: inline-block;
+	margin-left: .25em;
+	padding:.2em 0;
+}
+th, td {
+	text-align: left;
+}
+
+td {
+	border-bottom:1px solid #ccc;
+}
+
+.print-btn {
+	position: absolute;
+	top:10px;
+	right: 10px;
+	width:250px;
+	height: 40px;
+	text-align: center;
+	border-radius:3px;
+	border:1px solid #ccc;
+	background-color:#f6f6f6;
+	color:#777;
+	text-decoration: none;
+}
+
+.total-panel {
+	border:3px solid #ccc;
+	margin-top:3em;
+	float: right;
+	background: #f6f6f6;
+	padding:.15em;
+}
+.total-panel dl dt {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	margin-bottom:.5em;
+}
+.total-panel dl dd {
+	display: inline-block;
+	width: 40%;
+	margin-left: .75em;
+	background: #fefefe;
+}
+
+.total-panel dl dd span {
+	display: inline-block;
+	margin-left: .15em;
+}
+
+.total-panel .total,
+.total-panel .total-label {
+	font-family: "open_sans_condensedbold";
+}
+
+span[contenteditable] {
+	cursor: pointer;
+}
+span[contenteditable]:focus {
+	cursor: default;
+}
+
+.remarques {
+	margin-top: 1em;
+	border:2px solid #ccc;
+	background: #f6f6f6;
+	min-height: 100px;
+}
+
+.remarques h3 {
+	margin:.5em .75em;
+	border-bottom: 1px dashed #ccc;
+}
+
+.remarques p {
+	margin:.5em 1.15em;
+	font-family: "Libre Baskerville";
+	font-size: .75em;
+	line-height: 1.5em;
+	color:#555;
+}
+
+@media print {
+  .container {
+    box-shadow: none;
+  }
+  .print-btn {
+  	display: none;
+  }
+}
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--<link rel="stylesheet" href="styles/bootstrap.min.css">-->
+        
+        <link rel="stylesheet" href="styles/main.css">
+
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+  
+  <a href="#" class="print-btn">Enregistrer en PDF</a>
+
+    <div class="container">
+      
+      
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>DEVIS</h1>
+            </div>
+            <div class="col-sm-6 devis-date">
+              <p contenteditable="true">13 Octobre 2014</p>
+           </div>
+          </div>
+
+          <div class="row from-to">
+            <div class="col-sm-6">
+              DE
+            </div>
+            <div class="col-sm-6">
+              A
+           </div>
+          </div>
+
+          <div class="row companies">
+            <div class="col-sm-6">
+              <div class="col-sm-4">
+                <img src="img/gorille-gris-logo.png" width="120" />
+              </div>
+              <div class="col-sm-8" contenteditable="true">
+                Grégory Pelletey<br/>
+                7 avenue de Taillebourg<br/>
+                75011 PARIS
+              </div>
+            </div>
+            <div class="col-sm-6 client-company">
+              <div class="col-sm-4">
+                <img src="img/gorille-gris-logo.png" width="120" />
+              </div>
+              <div class="col-sm-8" contenteditable="true">
+                Grégory Pelletey<br/>
+                7 avenue de Taillebourg<br/>
+                75011 PARIS
+              </div>
+           </div>
+          </div>
+
+          <div class="row devis-title">
+            <h2 contenteditable="true">DEVIS-CAM</h2>
+          </div>
+
+          <div class="row">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th><span>QTE</span></th>
+                  <th><span>UNITE</span></th>
+                  <th><span>DESCRIPTION</span></th>
+                  <th><span>PRIX</span></th>
+                  <th><span>TOTAL</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span contenteditable="true">24</span></td>
+                  <td><span contenteditable="true">Mois</span></td>
+                  <td><span contenteditable="true">Hébérgement OVH</span></td>
+                  <td><span contenteditable="true">2,39</span>&euro;</td>
+                  <td><span contenteditable="true">57,36</span>&euro;</td>
+                </tr>
+                 <tr>
+                  <td><span contenteditable="true">24</span></td>
+                  <td><span contenteditable="true">Mois</span></td>
+                  <td><span contenteditable="true">Hébérgement OVH</span></td>
+                  <td><span contenteditable="true">2,39</span>&euro;</td>
+                  <td><span contenteditable="true">57,36</span>&euro;</td>
+                </tr>
+                 <tr>
+                  <td><span contenteditable="true">24</span></td>
+                  <td><span contenteditable="true">Mois</span></td>
+                  <td><span contenteditable="true">Hébérgement OVH</span></td>
+                  <td><span contenteditable="true">2,39</span>&euro;</td>
+                  <td><span contenteditable="true">57,36</span>&euro;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6 total-panel">
+                <dl>
+                  <dt><span>SOUS-TOTAL<span></dt>
+                  <dd><span class="sub-total">375.36</span>&euro;</dd>
+                  <dt><span>TVA non applicable</span></dt>
+                  <dd><span class="tva">0</span>&euro;</dd>
+                  <dt><span>REMISE</span></dt>
+                  <dd><span class="remise" contenteditable="true">50</span>%</dd>
+                  <dt><span class="total-label">TOTAL</span></dt>
+                  <dd><span class="total">4000</span>&euro;</dd>
+                </dl>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-sm-12 remarques">
+                <h3>Remarques</h3>
+                <p contenteditable="true">Ici quelques remarques</p>
+              </div>
+          </div>
+
+      
+    </div> <!-- /container -->       
+
+
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script>
+          $('.print-btn').on('click', function(){
+            window.print();
+          });
+        </script>
+    </body>
+</html>
